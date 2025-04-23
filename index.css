@@ -1,6 +1,8 @@
 body{
     background-color: bisque;
     text-align: center;
+    margin: 0;
+    padding: 20px;
 }
 #keys{
     display: grid;
@@ -23,9 +25,11 @@ button{
     background-color: hsl(0,0%,15%);
     border: 5px solid black;
     border-radius: 30px;
+    width: 90%;
     max-width: 500px;
     overflow: hidden;
     margin: 0 auto;
+
 }
 
 button:hover{
@@ -54,3 +58,16 @@ button:active{
     background-color: hsl(0,51.6%,65%);
 }
 
+
+@media screen and (max-width: 480px) {
+    button {
+        height: 70px;
+        width: 70px;
+        font-size: 2rem;
+    }
+
+    #display {
+        font-size: 2rem;
+        padding: 15px;
+    }
+}
